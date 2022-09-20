@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/standart.css">
+        <title>GoCademy | Cursos</title>
+    </head>
+
+    <body>
+        <header class="pad-container">
+            <h2><a class="unstyle" href="../index.html">GoCademy</a></h2>
+            <nav>
+                <ul>
+                    <li><a id="mark" href="../sections/courses.html">Cursos</a></li>
+                    <li><a href="../sections/join.html"><button id="join-btn" class="btn-style"><code>Ingressar()</code></button></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="courses" class="pad-container">
+            <aside>
+                <form method="get">
+                    <label for="sortby">Pesquisar por:</label>
+                    <input class="btn-style" id="sortby" list="categories"><br>
+                    <datalist id="categories">
+                        <option value="Novos">
+                        <option value="Populares">
+                    </datalist>
+                    <label for="pref">Ordenar por:</label>
+                    <select class="btn-style" name="pref" id="pref">
+                        <option value="pop" selected>Popularidade</option>
+                        <option value="new" selected>Novidades</option>
+                    </select>
+                    <input class="btn-style" type="submit" value="Atualizar">
+                </form>
+            </aside>
+            <article id="course-list">
+                <a class="card" href="#programming-fundamentals">
+                    <figure>
+                        <img src="../images/course-1.jpg" alt="Fundamentos">
+                    </figure>
+                    <h3>Fundamentos da Programação de Jogos</h3>
+                </a>
+
+                <a class="card" href="#pixel-art">
+                    <figure>
+                        <img src="../images/course-2.png" alt="Pixel Art">
+                    </figure>
+                    <h3>Aprenda Pixel Art para Seus Jogos do Zero</h3>
+                </a>
+
+                <a class="card" href="#godot">
+                    <figure>
+                        <img src="../images/course-3.png" alt="Godot">
+                    </figure>
+                    <h3>Aprenda tudo sobre a Godot Engine e GameDev</h3>
+                </a>
+            </article>
+        </section>
+
+        
+        <footer class="pad-container">
+            <cite>GoCademy</cite>, por Caio H P Lima
+        </footer>
+    </body>
+</html> 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coopercred Implementos Rodoviários</title>
+
+    <link rel="icon" href="./images/favicon.png">
+    
+    <link rel="stylesheet" type="text/css" href="./css/materialize.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="green darken-5">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="brand-logo left"><img id="logo" src="./images/logo.png"
+                            alt="Coopercred Implementos Rodoviários"></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+                            class="material-icons medium">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">início</a></li>
+                        <li><a href="./sections/who.html">quem somos</a></li>
+                        <li><a href="./sections/trucks.html">carretas</a></li>
+                        <li><a href="./sections/pieces.html">peças</a></li>
+                        <li><a href="./sections/partners.html">parceiros</a></li>
+                        <li><a href="./sections/contact.html">contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">início</a></li>
+            <li><a href="./sections/who.html">quem somos</a></li>
+            <li><a href="./sections/trucks.html">carretas</a></li>
+            <li><a href="./sections/pieces.html">peças</a></li>
+            <li><a href="./sections/partners.html">parceiros</a></li>
+            <li><a href="./sections/contact.html">contato</a></li>
+        </ul>
+    </header>
+
+    <section class="no-margin">
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="images/banner1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="images/banner2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="images/banner3.jpg"></a>
+        </div>
+    </section>
+
+    <footer class="page-footer green darken-5">
+        <div class="row upper-footer">
+            <div class="container">
+                <div class="col m4 s12">
+                    <img class="responsive-img" src="./images/logo_2.png" alt="Coopercred Implementos Rodoviários"
+                        style="width: 120px;">
+                    <div class="footer-address">
+                        <p>
+                            <b>ENDEREÇO:</b> Avenida Juscelino Kubitscheck de Oliveira, 3405<br>
+                            Bairro Residencial Gramado - Patos de Minas
+                        </p>
+                        <p>
+                            <b>TELEFONE:</b> 0800-945-0304
+                        </p>
+                        <p>
+                            <b>E-MAIL:</b> contato@coopercredimplementos.com.br
+                        </p>
+                    </div>
+                </div>
+                <div class="col m4 s12">
+                    <img src="./images/iso.png" class="iso-logo" alt="">
+                </div>
+                <div class="col m4 s12">
+                    <b>NOVIDADES</b>
+                    <p>Informe o seu número do WhatsApp e receba promoções exclusivas toda semana!</p>
+                    <input placeholder="Número de Telefone com DDD" id="phone-number" type="number"
+                        class="validate"><br><br>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-copyright green darken-6">
+            <div class="container">
+                <div class="col m4 s12">
+                    <div class="social-icons">
+                        <a href="#whatsapp"><img src="./images/whatsapp.png" alt="WhatsApp"></a>
+                        <a href="#face"><img src="./images/facebook.png" alt="Facebook"></a>
+                        <a href="#insta"><img src="./images/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="col m4 s12">
+                    <p>2019 - Coopercred Implementos Rodoviários ©</p>
+                </div>
+                <div class="col m4 s12 center-align">
+                    <img src="./images/mus.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        //Carousel Init
+        $(document).ready(function () {
+            $('.carousel').carousel();
+            autoplay();
+        });
+
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
+        }
+
+        //Sidenav Init
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Documentation | Crystal Lizard</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body>
+        <header>
+            <div id="header-cont">
+                <figure>
+                    <img src="./images/logo.png" alt="CrystalLizard Logo">
+                    <figcaption>
+                        <h2>Crystal Lizard <span>DOCS</span></h2>
+                    </figcaption>
+                </figure>
+                <nav>
+                    <ul>
+                        <li><a href="#basics">Introdução</a></li>
+                        <li><a href="#news">Notícias</a></li>
+                        <li><a href="#info">Informações</a></li>
+                    </ul>
+                </nav>
+            </div>      
+        </header>
+        <aside>
+            <h2>HTML5 Tags</h2>
+            <nav>
+                <ul>
+                    <li><a href="#button">Botões <code>&lt;button&gt;</code></a></li>
+                    <li><a href="#definition">Definição <code>&lt;dfn&gt;</code></a></li>
+                    <li><a href="#description">Descrição <code>&lt;dl&gt;</code></a></li>
+                    <li><a href="#details">Detalhes <code>&lt;details&gt;</code></a></li>
+                    <li><a href="#data">Data <code>&lt;data&gt;</code></a></li>
+                    <li><a href="#cite">Cite <code>&lt;cite&gt;</code></a></li>
+                    <li><a href="#code">Code <code>&lt;code&gt;</code></a></li>
+                    <li><a href="#colgroup">Colgroup e Col <code>&lt;colgroup&gt;</code></a></li>
+                    <li><a href="#datalist">Datalist <code>&lt;datalist&gt;</code></a></li>
+                    <li><a href="#fieldset">Fieldset <code>&lt;fieldset&gt;</code></a></li>
+                    <li><a href="#progress">Progress <code>&lt;progress&gt;</code></a></li>
+                    <li><a href="#iframe">Iframe <code>&lt;iframe&gt;</code></a></li>
+                    <li><a href="#em">Em <code>&lt;em&gt;</code></a></li>
+                    <li><a href="#del">Del <code>&lt;del&gt;</code></a></li>
+                    <li><a href="#ins">Ins <code>&lt;ins&gt;</code></a></li>
+                    <li><a href="#figcaption">Figcaption <code>&lt;figcaption&gt;</code></a></li>
+                    <li><a href="#time">Time <code>&lt;time&gt;</code></a></li>
+                    <li><a href="#address">Address <code>&lt;address&gt;</code></a></li>
+                    <li><a href="#bdo">Bdo <code>&lt;bdo&gt;</code></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section id="content">
+            <article id="button">
+                <h2>Botões</h2><br>
+                <p>
+                    A tag <code>&lt;button&gt;</code> define um botão clicável, podendo executar funções em JavaScript.
+                    <br><br>
+                    Dentro de um <code>&lt;button&gt;</code>, nós podemos inserir um texto, além de outras tags,
+                    tais como <code>&lt;img&gt;, &lt;b&gt; ou &lt;i&gt;</code>, o que não pode ser feito com o simples elemento de <code>&lt;input&gt;</code>,
+                    esta tag também pode substituir o <code>&lt;input type="submit"/&gt;</code> por conta de sua habilidade de trabalhar com formulários.
+                    <br><br>
+                    Exemplo:
+                    <button>Clique!</button> 
+                </p>
+            </article>
+
+            <article id="definition">
+                <h2>Definição</h2><br>
+                <p>
+                    O elemento <code>&lt;dfn&gt;</code> nos permite revelar uma definição do elemento com o passar do mouse.<br>
+                    <br>
+                    Este elemento pode ser usado através de uma tag <code>&lt;abbr&gt;</code>, caso desejado, porém há muitas formas de se empregar esta mesma tag, da perspectiva da síntaxe.
+                    <br><br>
+                    Exemplo:
+                    <dfn><abbr title="Este é o título do elemento!">DFN</abbr></dfn> é uma tag usada para apresentar a definição de um termo.
+                </p>
+            </article>
+            <article id="description">
+                <h2>Descrição</h2><br>
+                <p>
+                    Para se criar uma descrição, utiliza-se as seguintes tags:<br>
+                    <ul>
+                        <li><code>&lt;dl&gt;</code> - Lista da descrição</li>
+                        <li><code>&lt;dt&gt;</code> - Termo da descrição</li>
+                        <li><code>&lt;dd&gt;</code> - Definição da descrição</li>
+                    </ul>
+                    <br><br>
+                    Exemplo:<br><br>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>É uma liguagem de marcação</dd>
+                        <dt>CSS</dt>
+                        <dd>Define uma folha de estilo para configurar uma página HTML</dd>
+                    </dl>                     
+                </p>
+            </article>
+
+            <article id="details">
+                <h2>Detalhes</h2><br>
+                <p>
+                    Usamos a Tag <code>&lt;summary&gt;</code> para exibir textos especificando detalhes do elemento pressionado, que podem ser revelados através do clique do mouse.
+                    <br><br>
+                    Exemplo: 
+                    <details>
+                        <summary>Açaí</summary>
+                        <p>Doce e gelado</p>
+                    </details>
+                </p>
+            </article>
+
+            <article id="data">
+                <h2>Data</h2><br>
+                <p>
+                    Esta tag é responsável por adicionar um elemento a uma numeração para facilitar na programação de certas funcionalidades do site, como por exemplo, produtos
+                    com código de barras.
+                    <br><br>
+                    Exemplo de Síntaxe: <code>&lt;data value=“1234”&gt;Arroz&lt;/data&gt;</code><br>
+                    Exemplo de Uso: <data value="1234">Arroz</data> (possui o valor de 1234)
+                </p>
+            </article>
+
+            <article id="cite">
+                <h2>Cite</h2><br>
+                <p>
+                    A tag <code>&lt;cite&gt;</code> serve para criarmos uma citação, para colocar o título da obra presente, seguido do nome do autor (fora da tag).
+                    <br><br>
+                    Exemplo de Síntaxe: <code>&lt;cite&gt;Crystal Lizard DOCS&lt;/cite&gt; feito por Caio H P Lima.</code><br>
+                    Exemplo de Uso: <cite>Crystal Lizard DOCS</cite> feito por Caio H P Lima.
+                </p>
+            </article>
+
+            <article id="code">
+                <h2>Code</h2><br>
+                <p>
+                    Define um texto como código, de tal forma que o navegador troque sua fonte para uma já predeterminada. Tag usada para mostrar códigos em HTML ou CSS (tal como nessa página)
+                    <br><br>
+                    Exemplo: A tag <code>&lt;img&gt;</code> serve para anexarmos imagens à nossa página.
+                </p>
+            </article>
+
+            <article id="colgroup">
+                <h2>Colgroup e Col</h2><br>
+                <p>
+                    Estas tags são usadas para dar uma formatação em CSS mais agradável para uma tabela
+                    <br><br>
+                    Exemplo: <br>
+                    <br>
+                    <table>
+                        <colgroup>
+                          <col span="1" style=" background-color:rgb(102, 46, 107)">
+                          <col style="background-color:rgb(52, 131, 76)">
+                        </colgroup>
+                        <tr>
+                          <th>Produto</th>
+                          <th>Preço</th>
+                        </tr>
+                        <tr>
+                          <td>Alvejante</td>
+                          <td>R$3</td>
+                        </tr>
+                    </table> 
+                </p>
+            </article>
+
+            <article id="datalist">
+                <h2>Datalist</h2><br>
+                <p>
+                    Esta tag pode ser usada para montar uma estrutura semelhante à tag <code>&lt;select&gt;</code>, só que de maneira manual.
+                    <br><br>
+                    Exemplo: 
+                    <form method="get">
+                        <label for="estado">Onde você vive?</label>
+                        <input list="estado">
+                        <datalist id="estado">
+                            <option value="MS">
+                            <option value="SP">
+                        </datalist>
+                        <input type="submit">
+                    </form>
+                </p>
+            </article>
+
+            <article id="fieldset">
+                <h2>Fieldset</h2><br>
+                <p>
+                    Esta tag pode ser usada para agrupar elementos relacionados entre si em um formulário, desenhando uma caixa em torno deles. O título dessa caixa pode ser definido
+                    através da tag <code>&lt;legend&gt;</code>.
+                    <br><br>
+                    Exemplo: <br>
+                    <form method="get">
+                        <fieldset>
+                            <legend>Formulário de Cadastro:</legend><br>
+
+                            <label for="fname">Primeiro nome:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Último nome:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email"><br><br>
+                            <label for="birthday">Aniversário:</label>
+                            <input type="date" id="birthday" name="birthday"><br><br>
+                            <input type="submit" value="Enviar">
+                        </fieldset>
+                    </form>
+                </p>
+            </article>
+
+            <article id="progress">
+                <h2>Progress</h2><br>
+                <p>
+                    Esta tag serve para que criemos barras de progresso, sendo usada em conjunto ao JavaScript, que garante sua funcionalidade.
+                    <br><br>
+                    Exemplo:
+                    <progress value="75" max="100">75%</progress>
+                </p>
+            </article>
+
+            <article id="iframe">
+                <h2>Iframe</h2><br>
+                <p>
+                    Um Iframe é como se fosse uma "janela" para outra página web, servindo para incorporar partes ou até mesmo páginas inteiras
+                    em sua própria.
+                    <br><br>
+                    Exemplo:<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3OC2aPCuzjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </article>
+
+            <article id="small">
+                <h2>Tags mais simples:</h2>
+                <ul>
+                    <li id="em">
+                        <code>&lt;em&gt;</code>: Esta tag serve para enfatizar algum pedaço de texto, deixando-o em formato itálico, porém sua principal função atua nas pesquisas, onde o termo enfatizado possui alta prioridade, aumentando assim o alcance do site. <br>
+                        Exemplo: <em>Termo Enfatizado</em>
+                    </li>
+
+                    <li id="del">
+                        <code>&lt;del&gt;</code>: Essa tag serve para "riscar" coisas que anteriormente estavam escritas, por exemplo, se eu tivese uma página que servisse como lista de compras, eu usaria um <code>&lt;del&gt;</code> para marcar os itens que já comprei. <br>
+                        Exemplo: Eu adoraria tomar um <del>chá</del> café.
+                    </li>
+
+                    <li id="ins">
+                        <code>&lt;ins&gt;</code>: Esta tag é responsável por inserir um texto novo, usado em substituição, por exemplo, do que foi removido através da tag <code>&lt;del&gt;</code>, deixando o texto sublinhado. <br>
+                        Exemplo: Eu adoraria tomar um <del>chá</del> <ins>café</ins>.
+                    </li>
+
+                    <li id="figcaption">
+                        <code>&lt;figcaption&gt;</code>: Utiliza-se esta tag para dar um título à uma imagem dentro de uma tag <code>&lt;figure&gt;</code>. <br>
+                        Exemplo: 
+                        <figure>
+                            <img src="./images/logo.png" alt="Ícone">
+                            <figcaption>logo do Crystal Lizard DOCS</figcaption>
+                        </figure>
+                    </li>
+
+                    <li id="time">
+                        <code>&lt;time&gt;</code>: Tag usada para definir um horário, contribui principalmente com o alcance do site nas pesquisas. <br>
+                        Exemplo: Nosso restaurante estará aberto das <time>12:00</time> até às <time>17:00</time>.
+                    </li>
+
+                    <li id="address">
+                        <code>&lt;address&gt;</code>:  Usamos esta tag para definir um endereço, ou simplesmente uma informação de contato (mesmo o uso mais comum realmente sendo para endereços). <br>
+                        Exemplo: Estamos localizados em <address>Avenida Alcidez Menezes de Faria, 1268</address>
+                    </li>
+
+                    <li id="bdo">
+                        <code>&lt;bdo&gt;</code>: Esta tag serve para substituir o texto atual por uma versão dele mesmo, porém com direção diferente. <br>
+                        Exemplo: <bdo dir="rtl">HTML é um aprendizado necessário para desenvolvedores web</bdo>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </body>
+</html>

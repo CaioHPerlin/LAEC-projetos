@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/standart.css">
+        <title>GoCademy | Bem-vindo(a)</title>
+    </head>
+
+    <body>
+        <header class="pad-container">
+            <h2><a class="unstyle" href="../index.html">GoCademy</a></h2>
+            <nav>
+                <ul>
+                    <li><a id="mark" href="../sections/courses.html">Cursos</a></li>
+                    <li><a href="../sections/join.html"><button id="join-btn" class="btn-style"><code>Ingressar()</code></button></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="buy" class="container">
+            <h3>Curso - Godot Engine para Desenvolvimento de Jogos <span class="gray"><br>Informações de Compra</span></h3><br>
+            <form method="GET">
+                <div class="form-cont">
+                    <label for="card">Cartão de Crédito ou Débito:</label>
+                    <input required type="number" id="card" placeholder="424242 424242 424242 424242"><br>
+                    <label for="cvv">CVV:</label>
+                    <input required type="number" id="cvv" placeholder="4242"><br>
+                    <label for="name">Nome Completo do Titular:</label>
+                    <input required type="text" id="name"><br>
+                    <br>
+                    <label for="state">Estado:</label>
+                    <select required name="state" id="state">
+                        <option value="ms">MS</option>
+                        <option value="sp">SP</option>
+                        <option value="sc">SC</option>
+                    </select><br>
+                    <label for="address">Endereço:</label>
+                    <input required placeholder="Av. Exemplo, Centro" type="text" name="address" id="address"><br>
+                    <label for="house-number">Número da Residência:</label>
+                    <input required placeholder="4242" type="number" name="house-number" id="house-number"><br>
+                    <label for="opt">Informações Adicionais (Opt.):</label>
+                    <input type="text" placeholder="Apartamento 13"><br>
+                    <br>
+                </div>
+
+                <div class="buttons">
+                    <input class="btn-style" type="reset" value="Limpar">
+                    <input class="btn-style" type="submit" value="Comprar">
+                </div>
+            </form>
+        </section>
+
+        <footer class="pad-container">
+            <cite>GoCademy</cite>, por Caio H P Lima
+        </footer>
+    </body>
+</html> 
